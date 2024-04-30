@@ -16,8 +16,8 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableScheduling
 @SpringBootApplication
 public class SystemApplication {
-
     public static void main(String[] args) {
+        System.out.println("hello world");
         SpringApplication.run(SystemApplication.class,args);
     }
 }
