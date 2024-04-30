@@ -1,0 +1,100 @@
+2024-04-21 10:00:05,705 DEBUG [http-nio-8000-exec-2][LogFormatUtils.java:91] - POST "/content/course/list?pageNo=0&pageSize=10", parameters={masked}
+2024-04-21 10:00:05,705 DEBUG [http-nio-8000-exec-2][LogFormatUtils.java:91] - POST "/content/course/list?pageNo=0&pageSize=10", parameters={masked}
+2024-04-21 10:00:05,749 DEBUG [http-nio-8000-exec-2][AbstractHandlerMapping.java:415] - Mapped to com.kevin.content.api.CourseBaseInfoController#list(PageParams, QueryCourseParamsDto)
+2024-04-21 10:00:05,749 DEBUG [http-nio-8000-exec-2][AbstractHandlerMapping.java:415] - Mapped to com.kevin.content.api.CourseBaseInfoController#list(PageParams, QueryCourseParamsDto)
+2024-04-21 10:00:05,757 DEBUG [http-nio-8000-exec-2][LogFormatUtils.java:91] - Read "application/json;charset=UTF-8" to [QueryCourseParamsDto(auditStatus=, courseName=, publishStatus=)]
+2024-04-21 10:00:05,757 DEBUG [http-nio-8000-exec-2][LogFormatUtils.java:91] - Read "application/json;charset=UTF-8" to [QueryCourseParamsDto(auditStatus=, courseName=, publishStatus=)]
+2024-04-21 10:00:05,761 DEBUG [http-nio-8000-exec-2][Logger.java:49] - Creating a new SqlSession
+2024-04-21 10:00:05,761 DEBUG [http-nio-8000-exec-2][Logger.java:49] - Creating a new SqlSession
+2024-04-21 10:00:05,763 DEBUG [http-nio-8000-exec-2][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19eea85] was not registered for synchronization because synchronization is not active
+2024-04-21 10:00:05,763 DEBUG [http-nio-8000-exec-2][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19eea85] was not registered for synchronization because synchronization is not active
+2024-04-21 10:00:05,772 DEBUG [http-nio-8000-exec-2][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
+2024-04-21 10:00:05,772 DEBUG [http-nio-8000-exec-2][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
+2024-04-21 10:00:05,775 DEBUG [http-nio-8000-exec-2][Logger.java:49] - JDBC Connection [HikariProxyConnection@41659995 wrapping com.mysql.cj.jdbc.ConnectionImpl@a755b90] will not be managed by Spring
+2024-04-21 10:00:05,775 DEBUG [http-nio-8000-exec-2][Logger.java:49] - JDBC Connection [HikariProxyConnection@41659995 wrapping com.mysql.cj.jdbc.ConnectionImpl@a755b90] will not be managed by Spring
+2024-04-21 10:00:05,775 DEBUG [http-nio-8000-exec-2][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT COUNT(*) FROM course_base
+2024-04-21 10:00:05,775 DEBUG [http-nio-8000-exec-2][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT COUNT(*) FROM course_base
+2024-04-21 10:00:05,776 DEBUG [http-nio-8000-exec-2][BaseJdbcLogger.java:137] - ==> Parameters: 
+2024-04-21 10:00:05,776 DEBUG [http-nio-8000-exec-2][BaseJdbcLogger.java:137] - ==> Parameters: 
+2024-04-21 10:00:05,789 DEBUG [http-nio-8000-exec-2][BaseJdbcLogger.java:137] - <==      Total: 1
+2024-04-21 10:00:05,789 DEBUG [http-nio-8000-exec-2][BaseJdbcLogger.java:137] - <==      Total: 1
+2024-04-21 10:00:05,807 DEBUG [http-nio-8000-exec-2][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT id,company_id,company_name,name,users,tags,mt,st,grade,teachmode,description,pic,create_date,change_date,create_people,change_people,audit_status,status FROM course_base LIMIT ?
+2024-04-21 10:00:05,807 DEBUG [http-nio-8000-exec-2][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT id,company_id,company_name,name,users,tags,mt,st,grade,teachmode,description,pic,create_date,change_date,create_people,change_people,audit_status,status FROM course_base LIMIT ?
+2024-04-21 10:00:05,808 DEBUG [http-nio-8000-exec-2][BaseJdbcLogger.java:137] - ==> Parameters: 10(Long)
+2024-04-21 10:00:05,808 DEBUG [http-nio-8000-exec-2][BaseJdbcLogger.java:137] - ==> Parameters: 10(Long)
+2024-04-21 10:00:05,824 DEBUG [http-nio-8000-exec-2][BaseJdbcLogger.java:137] - <==      Total: 10
+2024-04-21 10:00:05,824 DEBUG [http-nio-8000-exec-2][BaseJdbcLogger.java:137] - <==      Total: 10
+2024-04-21 10:00:05,825 DEBUG [http-nio-8000-exec-2][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19eea85]
+2024-04-21 10:00:05,825 DEBUG [http-nio-8000-exec-2][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19eea85]
+2024-04-21 10:00:05,826 DEBUG [http-nio-8000-exec-2][AbstractMessageConverterMethodProcessor.java:255] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-04-21 10:00:05,826 DEBUG [http-nio-8000-exec-2][AbstractMessageConverterMethodProcessor.java:255] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-04-21 10:00:05,828 DEBUG [http-nio-8000-exec-2][LogFormatUtils.java:91] - Writing [PageResult(items=[CourseBase(id=1, companyId=1232141425, companyName=, name=JAVA8/9/10新特性讲解, users=j (truncated)...]
+2024-04-21 10:00:05,828 DEBUG [http-nio-8000-exec-2][LogFormatUtils.java:91] - Writing [PageResult(items=[CourseBase(id=1, companyId=1232141425, companyName=, name=JAVA8/9/10新特性讲解, users=j (truncated)...]
+2024-04-21 10:00:05,837 DEBUG [http-nio-8000-exec-2][FrameworkServlet.java:1131] - Completed 200 OK
+2024-04-21 10:00:05,837 DEBUG [http-nio-8000-exec-2][FrameworkServlet.java:1131] - Completed 200 OK
+2024-04-21 10:00:26,751 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-04-21 10:00:26,751 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-04-21 10:00:26,752 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-04-21 10:00:26,752 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-04-21 10:00:56,758 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-04-21 10:00:56,758 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-04-21 10:00:56,760 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-04-21 10:00:56,760 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-04-21 10:01:26,764 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-04-21 10:01:26,764 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-04-21 10:01:26,767 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-04-21 10:01:26,767 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-04-21 10:01:56,771 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-04-21 10:01:56,771 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-04-21 10:01:56,773 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-04-21 10:01:56,773 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-04-21 10:02:26,788 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-04-21 10:02:26,788 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-04-21 10:02:26,790 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-04-21 10:02:26,790 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-04-21 10:02:52,913 DEBUG [SpringContextShutdownHook][AbstractApplicationContext.java:1006] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@62f68dff, started on Sun Apr 21 09:57:50 CST 2024, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6f3187b0
+2024-04-21 10:02:52,913 DEBUG [SpringContextShutdownHook][AbstractApplicationContext.java:1006] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@62f68dff, started on Sun Apr 21 09:57:50 CST 2024, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6f3187b0
+2024-04-21 10:02:52,983 DEBUG [SpringContextShutdownHook][DefaultLifecycleProcessor.java:369] - Stopping beans in phase 2147483647
+2024-04-21 10:02:52,983 DEBUG [SpringContextShutdownHook][DefaultLifecycleProcessor.java:369] - Stopping beans in phase 2147483647
+2024-04-21 10:02:52,988 DEBUG [SpringContextShutdownHook][DefaultLifecycleProcessor.java:242] - Bean 'documentationPluginsBootstrapper' completed its stop procedure
+2024-04-21 10:02:52,988 DEBUG [SpringContextShutdownHook][DefaultLifecycleProcessor.java:242] - Bean 'documentationPluginsBootstrapper' completed its stop procedure
+2024-04-21 10:02:53,008 DEBUG [SpringContextShutdownHook][DefaultLifecycleProcessor.java:242] - Bean 'webServerGracefulShutdown' completed its stop procedure
+2024-04-21 10:02:53,008 DEBUG [SpringContextShutdownHook][DefaultLifecycleProcessor.java:242] - Bean 'webServerGracefulShutdown' completed its stop procedure
+2024-04-21 10:02:53,008 DEBUG [SpringContextShutdownHook][DefaultLifecycleProcessor.java:369] - Stopping beans in phase 2147483646
+2024-04-21 10:02:53,008 DEBUG [SpringContextShutdownHook][DefaultLifecycleProcessor.java:369] - Stopping beans in phase 2147483646
+2024-04-21 10:02:53,163 DEBUG [SpringContextShutdownHook][DefaultLifecycleProcessor.java:242] - Bean 'webServerStartStop' completed its stop procedure
+2024-04-21 10:02:53,163 DEBUG [SpringContextShutdownHook][DefaultLifecycleProcessor.java:242] - Bean 'webServerStartStop' completed its stop procedure
+2024-04-21 10:02:53,167 DEBUG [SpringContextShutdownHook][MBeanExporter.java:452] - Unregistering JMX-exposed beans on shutdown
+2024-04-21 10:02:53,167 DEBUG [SpringContextShutdownHook][MBeanExporter.java:452] - Unregistering JMX-exposed beans on shutdown
+2024-04-21 10:02:53,169 DEBUG [SpringContextShutdownHook][MBeanRegistrationSupport.java:186] - Unregistering JMX-exposed beans
+2024-04-21 10:02:53,169 DEBUG [SpringContextShutdownHook][MBeanRegistrationSupport.java:186] - Unregistering JMX-exposed beans
+2024-04-21 10:02:53,170 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-04-21 10:02:53,170 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-04-21 10:02:53,174 INFO [SpringContextShutdownHook][HikariDataSource.java:350] - HikariPool-1 - Shutdown initiated...
+2024-04-21 10:02:53,174 INFO [SpringContextShutdownHook][HikariDataSource.java:350] - HikariPool-1 - Shutdown initiated...
+2024-04-21 10:02:53,174 DEBUG [SpringContextShutdownHook][HikariPool.java:421] - HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2024-04-21 10:02:53,174 DEBUG [SpringContextShutdownHook][HikariPool.java:421] - HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2024-04-21 10:02:53,175 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@a755b90: (connection evicted)
+2024-04-21 10:02:53,175 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@a755b90: (connection evicted)
+2024-04-21 10:02:53,202 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@2adcc423: (connection evicted)
+2024-04-21 10:02:53,202 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@2adcc423: (connection evicted)
+2024-04-21 10:02:53,205 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@6a852b83: (connection evicted)
+2024-04-21 10:02:53,205 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@6a852b83: (connection evicted)
+2024-04-21 10:02:53,208 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@ff1a053: (connection evicted)
+2024-04-21 10:02:53,208 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@ff1a053: (connection evicted)
+2024-04-21 10:02:53,209 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@4a9a7cc0: (connection evicted)
+2024-04-21 10:02:53,209 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@4a9a7cc0: (connection evicted)
+2024-04-21 10:02:53,211 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@bbfdb1b: (connection evicted)
+2024-04-21 10:02:53,211 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@bbfdb1b: (connection evicted)
+2024-04-21 10:02:53,212 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@47fd9dd: (connection evicted)
+2024-04-21 10:02:53,212 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@47fd9dd: (connection evicted)
+2024-04-21 10:02:53,213 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@43d7b860: (connection evicted)
+2024-04-21 10:02:53,213 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@43d7b860: (connection evicted)
+2024-04-21 10:02:53,214 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@52171353: (connection evicted)
+2024-04-21 10:02:53,214 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@52171353: (connection evicted)
+2024-04-21 10:02:53,216 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@799cb1af: (connection evicted)
+2024-04-21 10:02:53,216 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@799cb1af: (connection evicted)
+2024-04-21 10:02:53,217 DEBUG [SpringContextShutdownHook][HikariPool.java:421] - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2024-04-21 10:02:53,217 DEBUG [SpringContextShutdownHook][HikariPool.java:421] - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2024-04-21 10:02:53,217 INFO [SpringContextShutdownHook][HikariDataSource.java:352] - HikariPool-1 - Shutdown completed.
+2024-04-21 10:02:53,217 INFO [SpringContextShutdownHook][HikariDataSource.java:352] - HikariPool-1 - Shutdown completed.
